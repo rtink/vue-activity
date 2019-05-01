@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="media-right">
-        <span>Progress Bar Here</span>
+        <span>Progress: </span>
       </div>
     </div>
   </article>
@@ -23,7 +23,12 @@
 
 <script>
   export default {
-    props: ['activity']
+    props: {
+      activity: {
+        type: Object,
+        required: true
+      }
+    }
   }
 </script>
 
